@@ -14,7 +14,7 @@ class Payment < ApplicationRecord
 	end
 
 	def process_payment
-		customer = Stripe::Customer.create email: email, source: token
+		customer = Stripe::Customer.create email: email, source: 'tok_au'
 
 		Stripe::Charge.create customer: customer.id,
 													amount: 1000,

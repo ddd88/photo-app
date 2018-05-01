@@ -15,5 +15,4 @@
 //= require bootstrap-sprockets
 //= require twitter/bootstrap
 //= require activestorage
-//= require turbolinks
 //= require_tree .
